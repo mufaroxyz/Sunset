@@ -10,7 +10,7 @@ import logger from "./logger";
 // Somehow, this is late enough, though?
 export const color = findByProps("SemanticColor");
 
-export const themes = wrapSync(createStorage<Record<string, Theme>>(createMMKVBackend("VENDETTA_THEMES")));
+export const themes = wrapSync(createStorage<Record<string, Theme>>(createMMKVBackend("SUNSET_THEMES")));
 
 const semanticAlternativeMap: Record<string, string> = {
     "BG_BACKDROP": "BACKGROUND_FLOATING",
@@ -30,7 +30,7 @@ async function writeTheme(theme: Theme | {}) {
 
     // Save the current theme as vendetta_theme.json. When supported by loader,
     // this json will be written to window.__vendetta_theme and be used to theme the native side.
-    await createFileBackend("vendetta_theme.json").set(theme);
+    await createFileBackend("sunset_theme.json").set(theme);
 }
 
 export function patchChatBackground() {

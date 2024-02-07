@@ -86,7 +86,7 @@ export const getScreens = (youKeys = false): Screen[] => [
     },
     {
         key: formatKey("VendettaCustomPage", youKeys),
-        title: "Vendetta Page",
+        title: "Sunset Page",
         shouldRender: () => false,
         render: ({ render: PageView, noErrorBoundary, ...options }: { render: React.ComponentType; noErrorBoundary: boolean } & Record<string, object>) => {
             const navigation = NavigationNative.useNavigation();
@@ -110,8 +110,8 @@ export const getYouData = () => {
 
     return {
         getLayout: () => ({
-            title: "Vendetta",
-            label: "Vendetta",
+            title: "Sunset",
+            label: "Sunset",
             // We can't use our keyMap function here since `settings` is an array not an object
             settings: getRenderableScreens(true).map(s => s.key)
         }),

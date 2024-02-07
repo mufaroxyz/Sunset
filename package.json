@@ -1,5 +1,5 @@
 {
-    "name": "vendetta",
+    "name": "sunset",
     "version": "1.0.0",
     "description": "A mod for Discord's mobile apps.",
     "scripts": {
@@ -11,7 +11,7 @@
         "ios",
         "react native"
     ],
-    "author": "Beef",
+    "author": "Vendetta Team, Sunset Team",
     "license": "BSD-3-Clause",
     "devDependencies": {
         "@react-native-clipboard/clipboard": "1.10.0",
