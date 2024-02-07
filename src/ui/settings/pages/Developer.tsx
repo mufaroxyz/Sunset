@@ -60,7 +60,7 @@ export default function Developer() {
                         <FormInput
                             value={loaderConfig.customLoadUrl.url}
                             onChange={(v: string) => loaderConfig.customLoadUrl.url = v}
-                            placeholder="http://localhost:4040/vendetta.js"
+                            placeholder="http://localhost:4040/sunset.js"
                             title="SUNSET URL"
                         />
                         <FormDivider />
