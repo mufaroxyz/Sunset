@@ -11,7 +11,7 @@ type EvaledPlugin = {
     settings: JSX.Element;
 };
 
-export const plugins = wrapSync(createStorage<Record<string, Plugin>>(createMMKVBackend("SUNSET_PLUGINS")));
+export const plugins = wrapSync(createStorage<Record<string, Plugin>>(createMMKVBackend("VENDETTA_PLUGINS")));
 const loadedPlugins: Record<string, EvaledPlugin> = {};
 
 export async function fetchPlugin(id: string) {
@@ -64,7 +64,7 @@ export async function evalPlugin(plugin: Plugin) {
         },
         logger: new logModule(`Sunset » ${plugin.manifest.name}`),
     };
-    const pluginString = `sunset=>{return ${plugin.js}}\n//# sourceURL=${plugin.id}`;
+    const pluginString = `vendetta=>{return ${plugin.js}}\n//# sourceURL=${plugin.id}`;
 
     const raw = (0, eval)(pluginString)(vendettaForPlugins);
     const ret = typeof raw == "function" ? raw() : raw;

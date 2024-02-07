@@ -10,7 +10,7 @@ import logger from "./logger";
 // Somehow, this is late enough, though?
 export const color = findByProps("SemanticColor");
 
-export const themes = wrapSync(createStorage<Record<string, Theme>>(createMMKVBackend("SUNSET_THEMES")));
+export const themes = wrapSync(createStorage<Record<string, Theme>>(createMMKVBackend("VENDETTA_THEMES")));
 
 const semanticAlternativeMap: Record<string, string> = {
     "BG_BACKDROP": "BACKGROUND_FLOATING",
