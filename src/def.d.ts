@@ -114,6 +114,10 @@ interface PluginManifest {
     vendetta?: {
         icon?: string;
     };
+	// Sunset-specific vendor field
+	sunset?: {
+		icon?: string;
+	};
 }
 
 interface Plugin {
