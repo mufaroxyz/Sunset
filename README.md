@@ -8,7 +8,12 @@
 
 </div>
 
-## Installing
+## Installing 
+
+### iOS
+1. Read https://github.com/sunset-mod/SunsetTweak installation instructions.
+
+### Android
 1. Open Vendetta settings.
 2. Enable Developer settings.
 3. Enable "Load Vendetta from a custom URL.".
