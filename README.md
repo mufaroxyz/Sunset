@@ -1,5 +1,12 @@
-# Sunset
-A mod for @discord's mobile apps. Forked from Vendetta's recent sunset.
+<div align="center">
+
+  <img src="images/icon.png" alt="Sunset logo" width="200px" style="border-radius: 50%" />
+  
+  # Sunset
+
+  A mod for @discord's mobile apps. Forked from Vendetta's recent sunset.
+
+</div>
 
 ## Installing
 1. Open Vendetta settings.
