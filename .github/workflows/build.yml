@@ -7,9 +7,7 @@ jobs:
     build:
         name: Build and push
         runs-on: ubuntu-latest
-        permissions:
-            contents: read
-            pages: write
+        permissions: write-all
 
         steps:
             - uses: actions/checkout@v3
