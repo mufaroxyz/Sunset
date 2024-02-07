@@ -1,9 +1,9 @@
 import { Emitter, StorageBackend } from "@types";
 import createEmitter from "@lib/emitter";
 
-const emitterSymbol = Symbol.for("vendetta.storage.emitter");
-const syncAwaitSymbol = Symbol.for("vendetta.storage.accessor");
-const storageErrorSymbol = Symbol.for("vendetta.storage.error");
+const emitterSymbol = Symbol.for("sunset.storage.emitter");
+const syncAwaitSymbol = Symbol.for("sunset.storage.accessor");
+const storageErrorSymbol = Symbol.for("sunset.storage.error");
 
 export function createProxy(target: any = {}): { proxy: any; emitter: Emitter } {
     const emitter = createEmitter();

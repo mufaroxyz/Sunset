@@ -94,7 +94,7 @@ function newYouPatch(patches: Function[]) {
 const isLabel = (i: any, name: string) => i?.label === name || i?.title === name;
 
 function manipulateSections(sections: any[], layout: any) {
-    if (!Array.isArray(sections) || sections.find((i: any) => isLabel(i, "Vendetta"))) return;
+    if (!Array.isArray(sections) || sections.find((i: any) => isLabel(i, "Sunset"))) return;
 
     // Add our settings
     const accountSettingsIndex = sections.findIndex((i: any) => isLabel(i, i18n.Messages.ACCOUNT_SETTINGS));
