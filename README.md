@@ -16,9 +16,14 @@
 ### iOS
 1. Read https://github.com/sunset-mod/SunsetTweak installation instructions.
 
-### Android
-1. Open Vendetta settings.
-2. Enable Developer settings.
-3. Enable "Load Vendetta from a custom URL.".
-4. Paste https://raw.githubusercontent.com/sunset-mod/builds/master/sunset.js in it.
-5. Reload.
+### Android (Rooted)
+1. Install LSPosed.
+2. Grab the latest module APK at https://github.com/sunset-mod/SunsetXposed/releases.
+3. Enable the module in the LSPosed Manager.
+4. Fully close and reopen Discord.
+
+### Android (Unrooted)
+1. Install Vendetta Manager.
+2. Tap 10 times on the version string in Info to enable Dev Settings.
+3. Set the custom Xposed module location to /storage/emulated/0/Downloads/app-release.apk.
+4. Install.
