@@ -30,7 +30,7 @@ async function writeTheme(theme: Theme | {}) {
 
     // Save the current theme as vendetta_theme.json. When supported by loader,
     // this json will be written to window.__vendetta_theme and be used to theme the native side.
-    await createFileBackend("sunset_theme.json").set(theme);
+    await createFileBackend("vendetta_theme.json").set(theme);
 }
 
 export function patchChatBackground() {
@@ -51,7 +51,7 @@ export function patchChatBackground() {
         })),
         after("render", MessagesWrapper.prototype, (_, ret) => {
             const Messages = findInReactTree(ret, (x) => "HACK_fixModalInteraction" in x?.props && x?.props?.style);
-            if (Messages) 
+            if (Messages)
                 Messages.props.style = Object.assign(
                     RN.StyleSheet.flatten(Messages.props.style ?? {}),
                     {
@@ -72,7 +72,7 @@ function normalizeToHex(colorString: string): string {
     const color = Number(RN.processColor(colorString));
 
     return chroma.rgb(
-        color >> 16 & 0xff, // red 
+        color >> 16 & 0xff, // red
         color >> 8 & 0xff, // green
         color & 0xff, // blue
         color >> 24 & 0xff // alpha
@@ -201,9 +201,9 @@ export async function initThemes() {
 
         const [theme, propIndex] = args;
         const [name, colorDef] = extractInfo(theme, propIndex);
-        
+
         const themeIndex = theme === "amoled" ? 2 : theme === "light" ? 1 : 0;
-        
+
         //! As of 192.7, Tabs v2 uses BG_ semantic colors instead of BACKGROUND_ ones
         const alternativeName = semanticAlternativeMap[name] ?? name;
 
