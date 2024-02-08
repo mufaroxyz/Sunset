@@ -20,7 +20,7 @@
 1. Install LSPosed.
 2. Grab the latest module APK at https://github.com/sunset-mod/SunsetXposed/releases.
 3. Enable the module in the LSPosed Manager.
-4. Fully close and repoen Discord.
+4. Fully close and reopen Discord.
 
 ### Android (Unrooted)
 1. Install Vendetta.
