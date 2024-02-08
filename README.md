@@ -23,9 +23,7 @@
 4. Fully close and reopen Discord.
 
 ### Android (Unrooted)
-1. Install Vendetta.
-2. Open Vendetta settings.
-3. Enable Developer settings.
-4. Enable "Load Vendetta from a custom URL.".
-5. Paste https://raw.githubusercontent.com/sunset-mod/builds/master/sunset.js in it.
-6. Reload.
+1. Install Vendetta Manager.
+2. Tap 10 times on the version string in Info to enable Dev Settings.
+3. Set the custom Xposed module location to /storage/emulated/0/Downloads/app-release.apk.
+4. Install.
