@@ -26,5 +26,5 @@
 1. Install Vendetta Manager.
 2. Download **(don't install!)** [latest file](https://github.com/sunset-mod/SunsetXposed/releases/latest/app-release.apk).
 3. Tap 10 times on the version string in Info to enable Dev Settings.
-4. Set the custom Xposed module location to /storage/emulated/0/Downloads/app-release.apk.
+4. Set the custom Xposed module location to /storage/emulated/0/Download/app-release.apk.
 5. Install.
