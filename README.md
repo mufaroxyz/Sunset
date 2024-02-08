@@ -8,6 +8,9 @@
 
 </div>
 
+> [!CAUTION]
+> Sunset is currently in **alpha**. It means that stuff can, and probably will break. If you found a bug, open an issue and tell us more about it!
+
 ## Installing 
 
 ### iOS
